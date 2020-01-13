@@ -115,12 +115,20 @@ yum -y install iptraf
 yum -y install tcptrack
 yum -y install pktstat
 yum -y install netwatch
+# 直接根据进程查看网络数据报
 yum -y install trafshow
 yum -y install nethogs
 yum -y install atop
 yum -y install ethtool
 yum -y install iotop
 yum -y install iperf
+
+# shell
+yum -y install zsh
+command -v zsh | tee -a /etc/shells
+chsh -s "$(command -v zsh)" "${USER}"
+# zsh-newuser-install zsh 初始化命令
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # jdk
 yum -y install java-1.8.0-openjdk

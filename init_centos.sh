@@ -57,8 +57,8 @@ elif [ "$OS_VER" = 6 ]; then
 fi
 
 yum -y install mlocate 
-yum -y install lrzsz-0.12.20-36.el7.x86_64
-yum -y install redhat-lsb-core-4.1-27.el7.centos.1.x86_64
+yum -y install lrzsz
+yum -y install redhat-lsb-core
 yum -y install htop
 yum -y install psmisc
 yum -y install tree 

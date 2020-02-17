@@ -122,6 +122,7 @@ yum -y install atop
 yum -y install ethtool
 yum -y install iotop
 yum -y install iperf
+yum -y install openssl-devel
 
 # shell
 yum -y install zsh

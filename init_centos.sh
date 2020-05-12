@@ -168,4 +168,5 @@ yum install -y containerd.io docker-ce-cli docker-ce
 # timezone select
 rm -f /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
+# lua
+dnf install readline-devel
